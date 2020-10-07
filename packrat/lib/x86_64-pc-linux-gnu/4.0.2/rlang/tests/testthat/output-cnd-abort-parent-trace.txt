@@ -1,0 +1,35 @@
+> parent <- TRUE
+> wrapper <- FALSE
+> err <- catch_cnd(f())
+> print(err)
+<error/rlang_error>
+no wrapper
+Backtrace:
+  1. rlang::catch_cnd(f())
+  8. rlang:::f()
+  9. rlang:::g()
+ 10. rlang:::h()
+
+> wrapper <- TRUE
+> err <- catch_cnd(f())
+> print(err)
+<error/rlang_error>
+wrapper
+Backtrace:
+  1. rlang::catch_cnd(f())
+  8. rlang:::f()
+  9. rlang:::g()
+ 10. rlang:::h()
+
+> # FIXME?
+> parent <- FALSE
+> err <- catch_cnd(f())
+> print(err)
+<error/rlang_error>
+wrapper
+Backtrace:
+  1. rlang::catch_cnd(f())
+  8. rlang:::f()
+  9. rlang:::g()
+ 10. rlang:::h()
+
