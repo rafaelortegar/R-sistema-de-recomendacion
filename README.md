@@ -7,6 +7,6 @@ Para correr el código, solo es necesario seguir los siguientes pasos:
 * Instalar las paqueterías correspondientes, incluídas en el archivo de packrat.
 * Colocarse desde la terminal en el mismo directorio de este README.md.
 * Correr el siguiente comando:
-  `Rscript 3-create-recommendations.R "<nombre de película en ingles>"`
+  `Rscript 3-create-recommendations.R "<nombre de película en ingles>"`  
   Por ejemplo: Rscript 3-create-recommendations.R "Finding Nemo"
 
